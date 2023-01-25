@@ -8,6 +8,8 @@ body{
     background: #000;
     color: #fff;
 }
+/* header */
+
 .header{
     width: 100%;
     height: 100vh;
@@ -49,4 +51,120 @@ nav button{
 .language-btn img{
     width:10px;
     margin-left: 10px;
+}
+.header-content{
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    transition: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 100px;
+}
+.header-content h1{
+    font-weight: 700;
+    max-width:600px;
+    line-height: 70px;
+    font-size: 60px;
+}
+.header-content h3{
+    font-weight:300;
+    /* font-size: 30px; */
+    margin-bottom: 20px;
+}
+.email-signup{
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.email-signup input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+}
+.email-signup button{
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size:16px;
+    cursor: pointer;
+    padding: 15px 30px;
+
+}
+
+/* features */
+.features{
+    padding:50px 12%;
+    font-size: 22px;
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+
+}
+.img-col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+
+}
+.features h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+}
+
+/* FAQ'S */
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+.faq h2{
+    font-size: 40px;
+    font-weight: 400;
+}
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+
+}
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    position: relative;
+    cursor: pointer;
+}
+label::after{
+    content: "+";
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
 }
